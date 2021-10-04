@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="script.js"></script>
+    <link href= "style.css" rel="stylesheet">
+    <link href= "normalize.css" rel="stylesheet">
+    <link href= "skeleton.css" rel="stylesheet">
+    
+</head>
+<body onload="loopArr()">
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <img src="library.svg" alt="">
+                <h1>My Library</h1>
+                </div>
+        </div>
+
+        <div class="row">
+            <form>
+                <div class="five columns">
+                    <label for="bookName">Book Name</label>
+                    <input type="text" id="bookName" class="u-fill-width">
+                </div>
+
+                <div class="five columns">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" class="u-fill-width">
+                </div>
+
+                <div class="two columns">
+                    <label for="BookStatus">Status</label>
+                    <select name="BookStatus" id="BookStatus" class="u-fill-width">
+                        <option class="readStatus" value="read">Read</option>
+                        <option class="readStatus" value="notRead">Not Read</option>
+                    </select>
+                </div>
+                <input type="button" id="submit" class="button-primary" value="Submit" onclick="addBookToLibrary()">
+                <br>
+            </form>
+        </div>
+        <div class="box-control">
+        <div class="row">
+            <div class="twelve columns">
+            <table id="table1" class="twelve column">
+                <thead>
+                    <tr>
+                        <th>Book name</th>
+                        <th>Author</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id = "tableBody"></tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div id="DOMtableDiv" class="twelve columns"></div>
+        </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+.column {
+    margin-top: 10%;
+}
+
+.delete {
+    border: none;
+    background-color: rgb(189, 11, 11);
+    color: white;
+}
+
+.delete:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#submit{
+    border: none;
+    background-color: rgb(9, 139, 53);
+}
+
+#submit:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+html {
+    box-sizing: border-box;
+    background: url('./library.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    z-index: -1;
+}
+
+
+.box-control {
+    padding: 20px;
+    max-width: 950px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    fill: white;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+form,h1 {
+    color: white;
+}
